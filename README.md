@@ -1,2 +1,2 @@
-# project-workhub
-Enhanced Food Ordering and Utilization Tracking
+# WorkHub
+## Enhanced Food Ordering and Utilization Tracking
