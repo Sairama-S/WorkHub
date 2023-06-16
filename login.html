@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            /* background-color: rgb(177, 208, 248); */
+        }
+
+        #container {
+            max-height: 50%;
+            max-width: 90%;
+            margin: 20% 5%;
+            text-align: center;
+            background-color: #C0FFB3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #container p {            
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .input-fields {
+            font-weight: bold;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 1px 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        button a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Please login with your WorkHub credentials</p>
+        <form action="">
+            <ul>
+                <li>
+                    <label for="username" class="input-fields">Username: </label>
+                    <input type="text" id="username" placeholder="Employee Id">
+                </li>
+                <li>
+                    <label for="password" class="input-fields">Password: </label>
+                    <input type="password" id="password">
+                </li>                
+            </ul>
+            <button type="submit"><a href="landing.html"">Submit</a></button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders | Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <div id="info-left">
+                <h1>Project WorkHub</h1>
+                <h2>Free Cafeteria Service</h2>
+            </div>
+            <div id="info-center"><h1>Your Past Orders</h1></div>
+            <div id="info-right">
+                <ul>
+                    <a href="login.html" id="sign-out"><li><strong>Sign Out</strong></li></a>                
+                    <li class="header-right">
+                        <ul>                            
+                            <li class="user-profile"><strong>Name:</strong> Sairama S</li>
+                            <li class="user-profile"><strong>Employee ID:</strong> XYZ123</li>
+                            <li class="user-profile"><strong>Contact:</strong> 100</li>
+                        </ul>
+                    </li>
+                    <li class="header-right" id="dp"><img src="./img/user-profile-icon.jpg" alt="profile-photo"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="past-order">
+        <form action="">
+            <div id="from-date-cont">
+                <label for="from-date"><strong>From Date: </strong></label>
+                <input type="date" id="from-date">
+            </div>
+            <div id="to-date-cont">
+                <label for="to-date"><strong>To Date: </strong></label>
+                <input type="date" id="to-date">
+            </div>
+            <input type="submit" value="Go" id="body-btn">
+        </form>
+
+        <table id="past-order-chart">
+            <tr>
+                <th>Date</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+            </tr>
+            <tr>
+                <td>06/06/2023</td>
+                <td><img src="img/veg.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>07/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>08/06/2023</td>
+                <td><img src="img/veg.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>09/06/2023</td>
+                <td><img src="img/veg.png" alt=""></td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>10/06/2023</td>
+                <td><img src="img/veg.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>11/06/2023</td>
+                <td><img src="img/veg.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>12/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>13/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>14/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>15/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>16/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>17/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>18/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>19/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>20/06/2023</td>
+                <td><img src="img/not-ordered.png" alt=""></td>
+                <td><img src="img/non-veg.png" alt=""></td>
+            </tr>
+        </table>
+        <button type="button" id="body-btn">Previous</button>
+        <button type="button" id="body-btn">Next</button>
+    </section>
+    <footer>
+        <div id="footer-container">
+            <a href="https://kongsbergdigital.com/" class="footer-btn"><h3>Kongsberg Digital</h3></a>
+            <a href="order.html" class="footer-btn"><h3>Order Now</h3></a>
+            <a href="login.html" class="footer-btn"><h3>Sign Out</h3></a>
+        </div>
+    </footer>
+</body>
+</html>
