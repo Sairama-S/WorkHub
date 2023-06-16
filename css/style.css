@@ -113,13 +113,13 @@ li.user-profile {
     background-color: rgb(199,199,199);
 }
 
-#past-order {
+#past-order, #current-order {
     padding: 10px;    
     text-align: center;
    /* margin: 20px;*/
 }
 
-#past-order-chart {   
+#past-order-chart, #current-order-chart {   
     background-color: black;
     border-radius: 5px;
     /* border-collapse: collapse; */
