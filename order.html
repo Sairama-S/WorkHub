@@ -18,143 +18,142 @@
             </div>
             <div id="info-center"><h1>Your Current Orders</h1></div>
             <div id="info-right">
-                <ul>
-                    <a href="login.html" id="sign-out"><li><strong>Sign Out</strong></li></a>                
-                    <li class="header-right">
-                        <ul>                            
-                            <li class="user-profile"><strong>Name:</strong> Sairama S</li>
-                            <li class="user-profile"><strong>Employee ID:</strong> XYZ123</li>
-                            <li class="user-profile"><strong>Contact:</strong> 100</li>
-                        </ul>
-                    </li>
-                    <li class="header-right" id="dp"><img src="./img/user-profile-icon.jpg" alt="profile-photo"></li>
+                <div id="dp"><img src="./img/user-profile-icon.jpg" alt="profile-photo"></div>
+                <ul id="user-profile">                                               
+                    <li><strong>Name:</strong> Sairama S</li>
+                    <li><strong>Employee ID:</strong> XYZ123</li>
+                    <li><strong>Contact:</strong> 100</li>                    
                 </ul>
+                <a href="login.html" id="sign-out"><strong>Sign Out</strong></a>                
             </div>
         </div>
     </header>
     <section id="current-order">
         <form action="">
-            <table id="current-order-chart">
-                <tr>
-                    <th>Date</th>
-                    <th>Breakfast</th>
-                    <th>Lunch</th>
-                </tr>
-                <tr>
-                    <td>16/06/2023</td>
-                    <td>
-                        <select name="today-bf" id="today-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="today-lunch" id="today-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>17/06/2023</td>
-                    <td>
-                        <select name="day-2-bf" id="day-2-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-2-lunch" id="day-2-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>18/06/2023</td>
-                    <td>
-                        <select name="day-3-bf" id="day-3-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-3-lunch" id="day-3-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>19/06/2023</td>
-                    <td>
-                        <select name="day-4-bf" id="day-4-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-4-lunch" id="day-4-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20/06/2023</td>
-                    <td>
-                        <select name="day-5-bf" id="day-5-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-5-lunch" id="day-5-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>21/06/2023</td>
-                    <td>
-                        <select name="day-6-bf" id="day-6-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-6-lunch" id="day-6-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>22/06/2023</td>
-                    <td>
-                        <select name="day-7-bf" id="day-7-bf">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="day-7-lunch" id="day-7-lunch">
-                            <option value="select" selected>Select</option>
-                            <option value="veg">Veg</option>
-                            <option value="non-veg">Non-Veg</option>
-                        </select>
-                    </td>
-                </tr>
-                            
-            </table>
-            <button type="submit" id="body-btn">Order</button>
+            <div id="table-container">
+                
+                <table id="current-order-chart">
+                    <tr>
+                        <th>Date</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                    </tr>
+                    <tr>
+                        <td>16/06/2023</td>
+                        <td>
+                            <select name="today-bf" id="today-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="today-lunch" id="today-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17/06/2023</td>
+                        <td>
+                            <select name="day-2-bf" id="day-2-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-2-lunch" id="day-2-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18/06/2023</td>
+                        <td>
+                            <select name="day-3-bf" id="day-3-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-3-lunch" id="day-3-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19/06/2023</td>
+                        <td>
+                            <select name="day-4-bf" id="day-4-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-4-lunch" id="day-4-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20/06/2023</td>
+                        <td>
+                            <select name="day-5-bf" id="day-5-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-5-lunch" id="day-5-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21/06/2023</td>
+                        <td>
+                            <select name="day-6-bf" id="day-6-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-6-lunch" id="day-6-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22/06/2023</td>
+                        <td>
+                            <select name="day-7-bf" id="day-7-bf">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="day-7-lunch" id="day-7-lunch">
+                                <option value="select" selected>Select</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                                
+                </table>
+            </div>
+            <button type="submit" class="body-btn">Order</button>
         </form>
     </section>
     <footer>
